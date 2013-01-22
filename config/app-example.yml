@@ -1,0 +1,12 @@
+development:
+    db:
+        url:
+    host:
+    session:
+        secret:
+    twitter:
+        consumerKey:
+        consumerSecret:
+    facebook:
+        appId:
+        appSecret:

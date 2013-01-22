@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webjoy - go social!</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand" href="/">webjoy</a>
+                <div class="nav-collapse collapse">
+                    <p class="navbar-text pull-right">
+                    Logged in as <a href="#profile" id="user-name" data-id="<%= user.id %>" class="navbar-link"><%= user.name %></a>
+                    </p>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list options">
+                        <li class="nav-header">
+                            <span class="avatar">
+                                <img id="user-avatar" src="<%= user.avatar %>" class="img-rounded">
+                                <i class="<%= user.provider %>"></i>
+                            </span>
+                            <%= user.name %>
+                        </li>
+                        <li><hr /></li>
+                        <li class="nav-header">Options</li>
+                        <li class="wall"><a href="#">Wall</a></li>
+                        <li class="chat"><a href="#chat">Chat</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </div><!--/.well -->
+            </div><!--/span3-->
+            <div role="main" id="main" class="span9"></div>
+        </div><!--/row-->
+
+        <hr>
+
+        <footer>
+            <p>webjoy.pl &copy; 2012</p>
+        </footer>
+
+    </div><!--/.fluid-container-->
+
+    <script data-main="app/config" src="/assets/js/libs/require.js"></script>
+
+    <!--[if lt IE 7 ]>
+        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+        <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+</body>
+</html>

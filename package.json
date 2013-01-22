@@ -1,0 +1,28 @@
+{
+  "name": "webjoy",
+  "subdomain": "webjoy",
+  "analyze": false,
+  "domains": [
+    "webjoy.pl",
+    "www.webjoy.pl"
+  ],
+  "scripts": {
+    "start": "app.js"
+  },
+  "version": "0.1.0-6",
+  "engines": {
+    "node": "v0.8.x"
+  },
+  "dependencies": {
+    "yaml-config": "0.1.x",
+    "express": "2.5.x",
+    "mongoose": "2.7.4",
+    "mongoose-auth": "0.0.11",
+    "connect-mongodb": "1.1.x",
+    "path": "0.4.x",
+    "everyauth": "0.2.x",
+    "ejs": "0.8.x",
+    "validator": "0.4.x",
+    "socket.io": "0.9.x"
+  }
+}

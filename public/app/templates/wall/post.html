@@ -1,0 +1,32 @@
+<div class="well clearfix">
+    <button type="button" class="close">×</button>
+    <div>
+        <div class="avatar">
+            <img src="<%= user.avatar %>" class="img-rounded" />
+            <strong><%= user.name %></strong>
+        </div>
+        <div class="body">
+            <p>
+                <%= body %>
+            </p>
+            <div class="bottom">
+                <small><span class="hidden-phone"><a href="#" class="show-comments">Comments</a> · </span>Added <%= created_at %></small>
+            </div>
+        </div>
+    </div>
+    <hr class="visible-phone"/>
+    <div class="comments visible-phone">
+        <ul>
+            <% _.each(comments, function (comment) { %>
+                <li>
+                    <strong><%= comment.user %></strong>:
+                    <br />
+                    <p><%= comment.body %></p>
+                </li>
+            <% }); %>
+        </ul>
+        <form class="form-inline" data-post-id="<%=id %>">
+            <input type="text" class="span12" placeholder="Write a comment...">
+        </form>
+    </div>
+</div>

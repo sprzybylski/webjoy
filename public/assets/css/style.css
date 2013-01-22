@@ -1,0 +1,68 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.nav-list .avatar {
+    display: inline-block;
+    position: relative;
+}
+.nav-list .avatar img {
+    margin-right: 10px;
+}
+.nav-list .avatar i {
+    height: 14px;
+    left: 33px;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+}
+.nav-list .avatar .twitter {
+    background: url('../img/twitter-icon.png');
+    left: 31px;
+}
+.nav-list .avatar .facebook {
+    background: url('../img/facebook-icon.png');
+}
+
+footer {
+    text-align: center;
+}
+
+.users-list li {
+    margin-top: 0.2em;
+}
+
+.conversation ul {
+    list-style: none;
+    margin: 0;
+}
+
+.conversation i {
+    color: gray;
+}
+
+.wall ul {
+    margin: 0;
+    list-style: none;
+}
+
+.posts .body p {
+    margin: 10px 0;
+}
+
+.comments-container {
+    position: relative;
+}
+
+.comments-container .well {
+    position: absolute;
+}
+
+.comments-container .icon-circle-arrow-left {
+    position: absolute;
+}

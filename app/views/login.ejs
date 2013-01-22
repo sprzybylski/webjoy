@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webjoy - go social!</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+        .hero-unit, footer {
+            text-align: center;
+        }
+        .social-icons a span {
+            display: inline-block;
+            height: 128px;
+            width: 128px;
+        }
+        .social-icons a span.fb-ico {
+            background: url('/assets/img/facebook-128-gray.png');
+        }
+        .social-icons a:hover span.fb-ico {
+            background: url('/assets/img/facebook-128.png');
+        }
+        .social-icons a span.twit-ico {
+            background: url('/assets/img/twitter-128-gray.png');
+        }
+        .social-icons a:hover span.twit-ico {
+            background: url('/assets/img/twitter-128.png');
+        }
+
+        @media (max-width: 480px) {
+            .hero-unit {
+                padding: 40px;
+            }
+            .hero-unit h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand" href="#">webjoy</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="hero-unit">
+            <h1>Welcome to <strong>WEBJOY</strong></h1>
+            <p>
+                Select social platform you want to login with:
+            </p>
+            <div class="social-icons">
+                <a href="/auth/facebook" title="facebook">
+                    <span class="fb-ico"></span>
+                </a>
+                <a href="/auth/twitter" title="twitter">
+                    <span class="twit-ico"></span>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <p>webjoy.pl &copy; 2012</p>
+        </footer>
+    </div><!--/.container-fluid-->
+</body>
+</html>

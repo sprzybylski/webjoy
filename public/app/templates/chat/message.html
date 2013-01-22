@@ -1,0 +1,7 @@
+<span class="time">[<%= time %>]</span>
+<% if (userName) { %>
+    <span class="user-name">&lt;<%= userName %>&gt;</span>
+    <%= content %>
+<% } else { %>
+    <i><%= content %></i>
+<% } %>
